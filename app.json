@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/commit/commit",
     "pages/enroll/enroll",
     "pages/load/load",
     "pages/login/login",
     "pages/square/square",
     "pages/mine/mine",
-    "pages/commit/commit",
     "pages/bottom_menu/bottom_menu",
     "pages/index/index",
     "pages/logs/logs"
