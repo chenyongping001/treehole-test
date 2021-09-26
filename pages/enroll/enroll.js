@@ -36,8 +36,8 @@ Page({
     })
   },
   signin: function (e) {
-    wx.navigateBack({
-      delta: 1,
+    wx.redirectTo({
+      url: '/pages/login/login',
     })
   },
   regist: function (e) {

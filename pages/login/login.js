@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    username: "",
+    password: "",
   },
 
   /**
@@ -28,7 +29,41 @@ Page({
   onShow: function () {
 
   },
-
+  usernameInput: function (e) {
+    this.setData({
+      username: e.detail.value
+    })
+  },
+  passwordInput: function (e) {
+    this.setData({
+      password: e.detail.value
+    })
+  },
+  regist: function (e) {
+    wx.redirectTo({
+      url: '/pages/enroll/enroll',
+    })
+  },
+  login: function (e) {
+    var that = this
+    if (that.data.username === '') {
+      wx.showModal({
+        title: '提示',
+        content: '请输入用户名',
+        showCancel: false,
+        success(res) {}
+      })
+    } else if (that.data.password === '') {
+      wx.showModal({
+        title: '提示',
+        content: '请输入密码',
+        showCancel: false,
+        success(res) {}
+      })
+    } else {
+      console.log("success")
+    }
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

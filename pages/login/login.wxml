@@ -1,2 +1,16 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<!--pages/enroll/enroll.wxml-->
+<view class="background">
+  <view class="first">
+    <input id="username" placeholder="用户名" placeholder-class="plas" class="inputs" type="text"
+      bindinput="usernameInput" />
+  </view>
+  <view class="second">
+    <input id="password" placeholder="登陆密码" placeholder-class="plas" class="inputs" type="password"
+      bindinput="passwordInput" />
+  </view>
+  <view id="login" class="click" bindtap="login">登陆</view>
+  <view class="cha" bindtap="regist">
+    <text class="no">没有账户，点我注册</text>
+  </view>
+</view>
