@@ -21,11 +21,12 @@ page{
   width: 84%;
   height: 100rpx;
   line-height: 100rpx;
+  margin: auto;
   margin-top: 70rpx;
   margin-left: 8%;
   margin-right: 8%;
   text-align: center;
-  background-color: tomato;
+  background-color: #f76968;
   color: white;
   border-radius: 10rpx;
   font-size: 33rpx;

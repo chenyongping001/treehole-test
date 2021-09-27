@@ -5,9 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    detail:"",
   },
-
+  bindTextAreaBlur:function(e){
+    this.setData({
+      detail:e.detail.value
+    })
+  },
+  send:function(e){
+    var that=this
+    wx.showLoading({
+      title: '加载中',
+    })
+    console.log(this.data.detail)
+    //与服务器交互
+    setTimeout(() => {
+      wx.hideLoading({
+        success: (res) => {},
+      })
+    }, 2000);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
