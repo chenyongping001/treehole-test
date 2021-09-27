@@ -5,7 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[
+      {
+        face_url:"/images/add.png",
+        username:"哆啦B梦",
+        send_timestamp:"2021-9-27 17:09:12",
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
+        total_likes:99,
+      }, {
+        face_url:"/images/link.png",
+        username:"哆啦C梦",
+        send_timestamp:"2021-9-27 17:20:12",
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
+        total_likes:95,
+      }, 
+      {
+        face_url:"/images/likeplus.png",
+        username:"哆啦D梦",
+        send_timestamp:"2021-9-27 17:20:12",
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
+        total_likes:88,
+      }
+    ]
   },
 
   /**
