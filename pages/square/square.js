@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    fircol:"#000000",
+    seccol:"#979797",
     list:[
       {
         face_url:"/images/add.png",
@@ -12,8 +14,9 @@ Page({
         send_timestamp:"2021-9-27 17:09:12",
         content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
         total_likes:99,
-      }, {
-        face_url:"/images/link.png",
+      }, 
+      {
+        face_url:"/images/like.png",
         username:"哆啦C梦",
         send_timestamp:"2021-9-27 17:20:12",
         content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
@@ -25,8 +28,26 @@ Page({
         send_timestamp:"2021-9-27 17:20:12",
         content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
         total_likes:88,
+      }, 
+      {
+        face_url:"/images/likeplus.png",
+        username:"哆啦E梦",
+        send_timestamp:"2021-8-27 17:20:12",
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur cupiditate quas fugiat vel sed incidunt, id sint aperiam aliquid obcaecati, porro magni. Tenetur quos facere excepturi natus iure quia!",
+        total_likes:66,
       }
     ]
+  },
+  first_select:function(e){},
+  second_select:function(e){
+    wx.navigateTo({
+      url: '/pages/commit/commit',
+    })
+  },
+  third_select:function(e){
+    wx.redirectTo({
+      url: '/pages/mine/mine',
+    })
   },
 
   /**
